@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/public/css/main.css" /> -->
+
+    <title>Report App</title>
+  </head>
+  <body>
+    <div
+      class="container-md p-3 pb-1 mt-5 border rounded-3"
+      style="width: 450px"
+    >
+      <h3 class="text-center">Report App</h3>
+      <form id="reportForm">
+        <div class="row justify-content-center mb-3 mt-2">
+          <div class="col-md-1 w-100">
+            <input
+              class="form-control"
+              list="datalistOptions"
+              id="name"
+              placeholder="Інженер"
+            />
+            <datalist id="datalistOptions">
+              <option value="Олексій"></option>
+              <option value="Петро"></option>
+              <option value="Марина"></option>
+              <option value="Ольга"></option>
+              <option value="Микола"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-1 w-100">
+            <select
+              id="workType"
+              class="form-select form-select-md"
+              aria-label=".form-select-sm example"
+            >
+              <option selected value="ТП">ТП</option>
+              <option value="Довідка">Довідка</option>
+              <option value="Поділ/Виділ">Поділ/Виділ</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-1 w-100">
+            <input
+              id="ploshad"
+              type="number"
+              class="form-control"
+              placeholder="Площа"
+              aria-label="Площа"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-1 w-100">
+            <input
+              id="oshibki"
+              type="number"
+              class="form-control"
+              placeholder="Кількість помилок"
+              aria-label="Кількість помилок"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-1 w-100">
+            <button
+              class="btn btn-primary w-100"
+              type="submit"
+              type="button"
+              id="submitButton"
+            >
+              <span
+                id="buttonSpinner"
+                class="spinner-border spinner-border-sm d-none"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              <span id="buttonText">Додати</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div
+        id="unknownError"
+        class="alert alert-danger mt-2 d-none"
+        role="alert"
+      >
+        A simple danger alert—check it out!
+      </div>
+      <div
+        id="alertSucces"
+        class="alert alert-success mt-2 d-none"
+        role="alert"
+      >
+        A simple success alert—check it out!
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index1.js"></script>
+  </body>
+</html>

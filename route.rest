@@ -1,0 +1,37 @@
+GET http://localhost:3000/report?admin=Alexei&psw=123
+
+###
+GET http://localhost:3000/report/6033aa8a2adec3537ccf07c9
+
+###
+POST http://localhost:3000/report
+Content-Type: application/json
+
+{
+    "name": "Марина",
+    "workType": "ТП",
+    "ploshad": 10
+}
+
+###
+DELETE http://localhost:3000/report/60310af951e75a01240898d5
+
+###
+PATCH  http://localhost:3000/report/6033f1f99ddfe04ac0337ab1
+Content-Type: application/json
+
+{
+    "name" : "Наталия"
+}
+
+###
+GET http://localhost:5000/user?admin=Alexei&psw=123
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "Лия",
+    "password": "123"
+}

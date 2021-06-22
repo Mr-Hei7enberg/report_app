@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Записи</title>
+  </head>
+  <body>
+    <div class="container-md p-3">
+      <!-- Таблица -->
+      <div class="table-responsive">
+        <div class="col-md-1 w-100">
+          <h3 class="text-center">Записи</h3>
+          <table class="table table-sm table-hover align-middle">
+            <thead class="align-top">
+              <tr id="tableHead">
+                <th scope="col">№</th>
+                <th scope="col">ПІБ</th>
+                <th scope="col" class="text-center">Вид робіт</th>
+                <th scope="col" class="text-center">Кількість</th>
+                <th scope="col" class="text-center">Помилки</th>
+                <th scope="col" class="text-center">Дата</th>
+                <th scope="col" class="text-center">Дії</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody" class="">
+              <!-- Здесь будут данные с бека -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Таблица -->
+    </div>
+    <div class="container-md d-flex justify-content-center align-items-start">
+      <!-- Количество записей на странице -->
+      <div class="container-md d-flex justify-content-end align-items-start">
+        <select
+          class="form-select form-select-md"
+          aria-label=".form-select-md"
+          style="width: 70px"
+        >
+          <option selected>5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      <!-- Количество записей на странице -->
+      <!-- Пагинация -->
+      <div class="container-md d-flex justify-content-start align-items-start">
+        <nav aria-label="Pagination for Reports table">
+          <ul class="pagination justify-content-center reports-pagination">
+            <!-- Здесь будут данные с бека -->
+          </ul>
+        </nav>
+      </div>
+      <!-- Пагинация -->
+    </div>
+    <div id="alertSucces" class="alert alert-success mt-2 d-none" role="alert">
+      A simple success alert—check it out!
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d82b4f29ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
